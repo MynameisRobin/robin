@@ -1,0 +1,25 @@
+{
+    "authors": "Qubo <https://github.com/tkqubo>, Sean Kelley <https://github.com/seansfkelley>",
+    "libraryDependencies": [],
+    "moduleDependencies": [
+        "react",
+        "redux"
+    ],
+    "libraryMajorVersion": 4,
+    "libraryMinorVersion": 4,
+    "libraryName": "react-redux",
+    "typingsPackageName": "react-redux",
+    "projectName": "https://github.com/rackt/react-redux",
+    "sourceRepoURL": "https://www.github.com/DefinitelyTyped/DefinitelyTyped",
+    "sourceBranch": "types-2.0",
+    "kind": "ProperModule",
+    "globals": [],
+    "declaredModules": [
+        "react-redux"
+    ],
+    "files": [
+        "index.d.ts"
+    ],
+    "hasPackageJson": true,
+    "contentHash": "4acda70a2db559a1dcf5a1550fb2798996af52807ba8859909a13381d0398959"
+}

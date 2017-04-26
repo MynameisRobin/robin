@@ -1,0 +1,374 @@
+//picker默认显示在行内
+.ak-identity-picker-wrapper {
+    .ant-tag {
+        margin-right: 0.5*@rex+0px;;
+    }
+}
+#content{
+    #app_content{
+        margin: 0 -15px;
+        .wrapper-z1170{
+            width: 1170px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+#app_content{
+    .wrapper-z1170{
+        width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+        .ak-form-title{
+            border-bottom: solid 1px #ddd;
+            padding: 2px 0 7px 0;
+            min-height: 30px;
+            position: relative;
+            cursor: pointer;
+        }
+        .title-bluespan{
+            width: 5px;
+            height: 24px;
+            background: #63abeb;
+            display: inline-block;
+            float: left;
+            margin-right: 5px;
+        }
+    }
+}
+
+.ak-no-content, ak-disabled {
+    color: @disabled-color;
+}
+
+.ak-expr-editor-single {
+    position: relative;
+    border-collapse: separate;
+    border-spacing: 0;
+    display: table;
+    width: 100%;
+}
+
+.ak-expr-editor-single .ak-expr-editor-content {
+    position: relative;
+    float: left;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ak-expr-editor-multiple .ak-expr-editor-content {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.ak-expr-editor-content {
+    border: @textarea-border-size @textarea-border-type @border-color-base;
+    font-size: @font-size-base;
+    border-radius: @border-radius-base;
+    line-height: 2.4*@rex+0px;
+    padding: 0.2*@rex+0px;
+    overflow: auto;
+}
+
+.ak-expr-editor-content:focus {
+    outline: none;
+}
+
+.ak-input-icon {
+    position: relative;
+    top: 0.6*@rex+0px;
+}
+
+.ak-expr-editor-content input {
+    margin: 0.1*@rex+0px 0.4*@rex+0px;
+    padding: 0 0.6*@rex+0px;
+    height: 2.0*@rex+0px;
+    line-height: 2.0*@rex+0px;
+    background: @background-color-base;
+    border-radius: @border-radius-base;
+    display: inline-block;
+    font-weight: 500;
+    text-align: center;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    position: relative;
+    color: @button-color-base;
+    border-color: @border-color-base;
+}
+
+.ak-designer-assignee .ant-row {
+    margin-top: 1*@rex+0px;
+    margin-bottom: 1*@rex+0px;
+}
+
+/**任务选人title**/
+.ak-assignment-multi-title {
+    font-size: @font-size-lg;
+}
+
+/**任务选人list**/
+.ak-assignment-multi-list {
+    border: solid 1px @border-color-base;
+    padding: 1*@rex+0px;
+    .ant-row {
+        line-height: 3*@rex+0px;
+        border-bottom: solid 1px @border-color-split;
+        word-wrap: break-word;
+    }
+
+    .ant-row:last-child {
+        border-bottom: none;
+    }
+
+    .anticon {
+        cursor: pointer;
+    }
+}
+/**上传框*/
+.@{ant-prefix}-ak-upload {
+    display: block;
+    position:relative;
+    cursor: auto;
+    .@{ant-prefix}-upload{
+        &.@{ant-prefix}-upload-select-picture-card{
+            >.@{ant-prefix}-upload{
+                padding:0px;
+                img{
+                    width:auto;
+                    height:auto;
+                    max-width:100%;
+                    max-height:100%;
+                }
+            }
+        }
+    }
+    &-trigger {
+        vertical-align: middle;
+        font-size: 50px;
+        color: #999;
+    }
+}
+/* Model框内的图片大小*/
+.ak-detail-img{
+    border:1px @border-color-base dashed;
+    width:96px;
+    height:96px;
+    max-width:100%;
+    max-height:100%;
+}
+.ak-meta-tree{
+    >li{
+        a{
+            &.ant-tree-node-selected{
+                background-color:transparent;
+            }
+            &:hover{
+                background-color:transparent;
+            }
+        }
+    }
+}
+.ak-header{
+    background:@background-color-base;
+    border-bottom:solid 1px @border-color-split;
+    &-back{
+            height: 5*@rex+0px;
+            line-height: 5*@rex+0px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            padding:0 1.7*@rex+0px;
+            &:hover{
+                background:@normal-color;
+            }
+        }
+        &-title{
+            font-size: 1.6*@rex+0px;
+            height: 5*@rex+0px;
+            line-height: 5*@rex+0px;
+            padding-left:1.5*@rex+0px;
+            color: @black-color;
+        }
+}
+
+
+
+/**图形库样式**/
+.joint-link{
+    .connection{
+        stroke: @primary-color;
+        stroke-width: 2;
+    }
+    .marker-target{
+        stroke: @primary-color;
+        stroke-width: 2;
+        fill:@primary-color
+    }
+    .marker-source{
+        stroke: @primary-color;
+        stroke-width: 2;
+        fill:@white-color;
+    }
+    .marker-vertices{
+        .marker-vertex{
+            fill:@primary-color;
+        }
+        .marker-vertex-remove-area{
+            fill:@primary-color;
+        }
+    }
+    .marker-arrowheads{
+        .marker-arrowhead{
+        stroke: @primary-color;
+        stroke-width: 2;
+        fill:@primary-color;
+        &:hover{
+            stroke: @primary-color;
+            stroke-width: 2;
+            fill:@primary-color
+        }
+    }
+    }
+    .labels{
+        rect{
+            fill-opacity: 0;
+        }
+        text{
+            font-size:14px;
+            fill:@text-color;
+        }
+    }
+    .link-tools{
+        .tool-remove{
+            &>circle{
+                fill:@error-color;
+            }
+        }
+    .tool-options{
+        display: inline-block;
+        &>circle{
+            fill:@primary-color
+        }
+    }
+}
+}
+.bpmn-activity{
+    .content{
+        stroke:@primary-color;
+        fill:@white-color;
+        & > text{
+            text-anchor:middle;
+            stroke-width: 0;
+            fill:@primary-color;
+        }
+        & > path{
+            text-anchor:middle;
+        }
+    }
+    .header{
+        stroke:@primary-color;
+        fill:@primary-color;
+        & > text{
+            text-anchor:middle;
+            stroke-width: 0;
+            fill:@white-color;
+        }
+    }
+}
+.bpmn-event{
+    .content{
+        stroke-width: 2;
+        fill:@white-color;
+            &-start{
+            stroke:@success-color;
+            & > path{
+                fill:@success-color;
+            }
+            }
+            &-stop{
+            stroke:@error-color;
+                & > path{
+                    fill:@error-color;
+                }
+            }
+    }
+}
+.bpmn-gateway{
+    .content {
+        stroke:@warning-color;
+        stroke-width: 2;
+        fill:@white-color
+    }
+}
+
+/**左侧内容样式*/
+.ak-left-content{
+    padding-bottom: 9999px;
+    margin-bottom: -9999px;
+    border-right: 1px solid rgb(233,233,233);
+}
+
+/**头部右侧按钮样式*/
+.ak-basebtn-text {
+    .font14();
+    color: @black-color;
+    padding: 1.6*@rex+0px;
+    background-color: transparent;
+    cursor: pointer;
+    &:hover {
+        color: @black-color;
+        background-color: #edecec;
+    }
+    i.anticon {
+        padding: @rex+0px;
+        .font18();
+    }
+}
+
+/**省略号*/
+.ak-main-content-body .ant-table-row .anticon.ak-ellipsis {
+    .font20();
+    color: @black-color;
+    padding: 0.5*@rex+0px;
+    &:hover{
+        background: #edecec;
+        border-radius: 50%;
+    }
+}
+
+/**左侧树icon*/
+.ak-tree-ul li i.anticon{
+    margin-right: 0.5*@rex+0px;
+}
+
+/**表单测试样式*/
+.login-form {
+    max-width: 300px;
+    margin:0 auto;
+    h1{
+        text-align: center;
+    }
+}
+
+.login-form-forgot {
+    float: right;
+}
+
+.login-form-button {
+    width: 100%;
+}

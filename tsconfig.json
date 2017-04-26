@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "module": "commonjs",
+        "target": "es5",
+        "noImplicitAny": false,
+        "sourceMap": false,
+        "jsx": "react",
+        "noImplicitThis": true,
+        "removeComments": true,
+        "skipDefaultLibCheck": true,
+        "skipLibCheck": true,
+        "lib": [
+            "dom",
+            "es5",
+            "es6",
+            "scripthost",
+            "es2015",
+            "es2015.promise",
+            "es2015.core",
+            "es2015.collection"
+        ],
+        "allowSyntheticDefaultImports": true
+    }
+}
